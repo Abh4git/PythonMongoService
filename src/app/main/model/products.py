@@ -11,7 +11,7 @@ class ProductDetail(EmbeddedDocument):
     productinfo:str
 
 
-    productdetail = StringField(max_length=5000,required=True)
+    productdetail = StringField(max_length=10000,required=True)
 
     def __init__(self, productdetail,*args, **kwargs):
          super(EmbeddedDocument,self).__init__(*args, **kwargs)

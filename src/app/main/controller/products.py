@@ -20,5 +20,5 @@ class ProductController:
         return newProduct
 
     def getAllProducts(self):
-        producttypes=Product.query.all()
-        return jsonify({"producttypes":producttypes})
+        products=Product.query.all()
+        return jsonify({"products":products})
